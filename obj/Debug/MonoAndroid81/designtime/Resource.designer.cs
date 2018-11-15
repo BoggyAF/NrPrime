@@ -2555,6 +2555,9 @@ namespace nrprime
 			// aapt resource value: 0x7F0C0041
 			public const int list_item = 2131492929;
 			
+			// aapt resource value: 0x7F010002
+			public const int ll = 2130771970;
+			
 			// aapt resource value: 0x7F0C0042
 			public const int masked = 2131492930;
 			
@@ -2738,11 +2741,11 @@ namespace nrprime
 			// aapt resource value: 0x7F0C007C
 			public const int textSpacerNoTitle = 2131492988;
 			
-			// aapt resource value: 0x7F010002
-			public const int textViewNumar = 2130771970;
-			
 			// aapt resource value: 0x7F010003
-			public const int textViewResult = 2130771971;
+			public const int textViewNumar = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int textViewResult = 2130771972;
 			
 			// aapt resource value: 0x7F0C007D
 			public const int text_input_password_toggle = 2131492989;
