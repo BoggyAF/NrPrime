@@ -59,7 +59,7 @@ namespace nrprime
         private void Calculate()
         {
 
-            if (number[0] == "0")
+            if (number[0] == "0" || number[0] == "1")
             {
                 number[0] = null;
                 calculatorText.Text = "0";

@@ -22,7 +22,7 @@
 		android:layout_marginRight="0dp"
 		android:layout_marginTop="0dp">
 		<TextView
-			android:textColor="#4286f4"
+			android:textColor="#844baf"
 			android:text=""
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
@@ -38,7 +38,7 @@
 			android:layout_marginTop="0dp" />
 	</HorizontalScrollView>
 	<TextView
-		android:textColor="#4286f4"
+		android:textColor="#844baf"
 		android:text=""
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
