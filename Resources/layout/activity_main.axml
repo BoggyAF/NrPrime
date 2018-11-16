@@ -22,13 +22,13 @@
 		android:layout_marginRight="0dp"
 		android:layout_marginTop="0dp">
 		<TextView
-			android:textColor="#844baf"
+			android:textColor="#2C3E50"
 			android:text=""
 			android:layout_width="match_parent"
 			android:layout_height="match_parent"
 			android:id="@+id/textViewNumar"
 			android:padding="10dp"
-			android:textSize="30sp"
+			android:textSize="70sp"
 			android:foregroundGravity="center"
 			android:layout_gravity="center"
 			android:gravity ="center"
@@ -38,7 +38,7 @@
 			android:layout_marginTop="0dp" />
 	</HorizontalScrollView>
 	<TextView
-		android:textColor="#844baf"
+		android:textColor="#2C3E50"
 		android:text=""
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
@@ -49,7 +49,8 @@
 		android:layout_marginBottom="0dp"
 		android:layout_marginLeft="0dp"
 		android:layout_marginRight="0dp"
-		android:layout_marginTop="0dp" />
+		android:layout_marginTop="0dp" 
+		android:textSize="30sp"/>
 	<GridLayout
 		android:layout_width="match_parent"
 		android:layout_height="0dp"

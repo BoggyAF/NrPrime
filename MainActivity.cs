@@ -11,7 +11,7 @@ namespace nrprime
     public class MainActivity : AppCompatActivity
     {
 
-        private TextView calculatorText;
+        private TextView primText;
         private TextView resultText;
         private LinearLayout v;
 
@@ -23,7 +23,7 @@ namespace nrprime
 
             SetContentView(Resource.Layout.activity_main);
             v = FindViewById<LinearLayout>(Resource.Id.ll);
-            calculatorText = FindViewById<TextView>(Resource.Id.textViewNumar);
+            primText = FindViewById<TextView>(Resource.Id.textViewNumar);
             resultText = FindViewById<TextView>(Resource.Id.textViewResult);
             v.SetBackgroundColor(Android.Graphics.Color.Gray);
         }
@@ -45,8 +45,7 @@ namespace nrprime
             if (number[0] == "0")
             {
                 number[0] = null;
-                calculatorText.Text = "0";
-                resultText.Text = "Va rugam introduceti un numar valid.";
+                number[0] += value;
                 UpdateCalculatorText();
                 return;
             }
@@ -59,28 +58,20 @@ namespace nrprime
         private void Calculate()
         {
 
-            if (number[0] == "0" || number[0] == "1")
+            if (number[0] == "0" || number[0] == "1" || number[0] == null)
             {
-                number[0] = null;
-                calculatorText.Text = "0";
+                primText.Text = "0";
                 resultText.Text = "Va rugam introduceti un numar valid.";
-                UpdateCalculatorText();
-                return;
-            }
-
-            if (number[0] == null)
-            {
-                resultText.Text = "Numarul nu este prim!";
                 UpdateCalculatorText();
                 return;
             }
 
             int prim = int.Parse(number[0]);
 
-            if (prim >= 9999)
+            if (prim >= 99999)
             {
                 resultText.Text = "Introduceti un numar mai mic";
-                calculatorText.Text = "0";
+                primText.Text = "0";
                 UpdateCalculatorText();
                 return;
             }
@@ -120,7 +111,7 @@ namespace nrprime
 
         private void UpdateCalculatorText()
         {
-            calculatorText.Text = $"{number[0]}";
+            primText.Text = $"{number[0]}";
         }
     }
 }
