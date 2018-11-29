@@ -66,15 +66,15 @@ namespace nrprime
                 return;
             }
 
-            int prim = int.Parse(number[0]);
-
-            if (prim >= 99999)
-            {
-                resultText.Text = "Introduceti un numar mai mic";
-                primText.Text = "0";
+			if(number[0].Lenght >= 7)
+			{
+				resultText.Text = "Introduceti un numar mai mic";
+                calculatorText.Text = "0";
                 UpdateCalculatorText();
                 return;
-            }
+			}
+
+            int prim = int.Parse(number[0]);
 
             if (IsPrime(prim))
             {
